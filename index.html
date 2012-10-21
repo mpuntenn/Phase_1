@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>View Source</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="css/yellow.css" />
+	<link rel="stylesheet" href="css/structure.css" />
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+
+	<script src="js/myscript.js"></script>
+	<link rel="stylesheet" href="css/mystyles.css" />
+</head>
+<body>
+	<!-- Page: The Undead -->
+	<div id="home"data-role="page"data-theme="a"data-title="Home">
+
+		<div data-role="content">
+			<img src="images/theUndead_title.png" alt="View Source Logo" />
+		</div>
+		<div data-role="controlgroup">
+			<a href="#create" 
+				data-role="button"
+				data-icon="vs_create"
+			>Create</a>
+			<a href="#lib" 
+				data-role="button"
+				data-icon="vs_library"
+			>Library</a>
+			<a href="#connect" 
+				data-role="button"
+				data-icon="vs_connect"
+			>Connect</a>
+			<a href="#play" 
+				data-role="button"
+				data-icon="vs_play"
+			>Play</a>
+		</div><!-- links -->
+	</div><!-- page -->
+
+	<!-- Page: create -->
+<div id="create"data-theme="a"data-role="page" data-title="View Source: Create">
+		<div data-role="header"
+			data-theme="a"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Create</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-theme="a"
+		data-role="content" id="postlist">
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-theme="a"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="vs_create"
+					>Create</a></li>
+					<li><a href="#library" 
+					data-role="button"
+					data-icon="vs_libray"
+					>Library</a></li>
+					<li><a href="#connect" 
+					data-role="button"
+					data-icon="vs_connect"
+					>Connect</a></li>
+					<li><a href="#play" 
+					data-role="button"
+					data-icon="vs_play"
+					>Play</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+</div><!-- page -->
+
+	<!-- Page: Library -->
+<div id="library" data-role="page" data-title="View Source: Library">
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="#home" data-transition="fade"  data-icon="back" data-iconpos="notext" data-direction="reverse">Home</a>
+		<h1>Library</h1>
+		</div>
+		<div data-role="content">
+			<div id="librarylist"></div>
+		</div>
+</div>
+	<!-- Page: Connect -->
+	<div id="lib"
+		data-role="page"
+		data-title="View Source: Connect">
+		<div data-role="header"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Connect</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-role="content"><div data-role="content">
+			<img src="images/theTUdGF.png" alt="View Source Logo" />
+		</div></div>
+		<div data-role="footer"
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#create" 
+					data-role="button"
+					data-icon="vs_create"
+					>Create</a></li>
+					<li><a href="#library" 
+					data-role="button"
+					data-icon="vs_libray"
+					>Library</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="vs_connect"
+					>Connect</a></li>
+					<li><a href="#play" 
+					data-role="button"
+					data-icon="vs_play"
+					>Play</a></li>
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+	
+	<!-- Page: Play -->
+<div id="play"data-role="page"data-title="View Source: Play">
+		<div data-role="header"
+		data-position="fixed"
+		data-id="vs_header">
+		<h1>Play</h1>
+		<a href="#home"
+			data-icon="home"
+			data-iconpos="notext"
+			>Home</a>
+		<a href="#info"
+			data-icon="info"
+			data-iconpos="notext"
+			data-rel="dialog"
+			>Info</a>
+	</div><!-- header -->
+	<div data-role="content" id="playlist">
+		
+	</div>
+	<div data-role="footer"
+		data-position="fixed"
+		data-id="vs_footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" 
+				data-role="button"
+				data-icon="home"
+				>Home</a></li>
+				<li><a href="#create" 
+				data-role="button"
+				data-icon="vs_create"
+				>Create</a></li>
+				<li><a href="#library" 
+				data-role="button"
+				data-icon="vs_libray"
+				>Library</a></li>
+				<li><a href="#connect" 
+				data-role="button"
+				data-icon="vs_connect"
+				>Connect</a></li>
+				<li><a href="#" 
+				data-role="button"
+				data-icon="vs_play"
+				>Play</a></li>
+			</ul>
+		</div><!-- navbar -->
+	</div><!-- footer -->
+</div><!-- page -->
+
+	<div data-role="page"
+		id="info"
+		data-theme="a"
+		>
+		<div data-role="header">
+			<h1>About View Source</h1>
+		</div>
+		<div data-role="content">
+			<p>View Source offers short projects on intermediate to advanced web design topics, covering technologies such as HTML, PHP, jQuery, and CSS, as well as content management solutions like WordPress and integration with play, YouTube, and more.</p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+				data-theme="a"
+			>cancel</a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+				data-theme="a"
+			>home</a>
+		</div>
+	</div>
+	
+<script src="http://iviewsource.com/?json=recentstories&callback=listPosts" type="text/javascript"></script>
+<script src="http://gdata.youtube.com/feeds/users/PhoneGap/uploads?alt=json-in-script&max-results=30&callback=listlibrary" type="text/javascript"></script>
+<script src="http://twitter.com/status/user_timeline/techcrunch.json?count=30&callback=listTweets" type="text/javascript"></script>
+</body>
+</html>
